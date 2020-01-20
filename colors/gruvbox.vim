@@ -271,7 +271,7 @@ let s:gb.orange = s:orange
 " }}}
 " Setup Terminal Colors: {{{
 
-if has('nvim')
+if has('nvim') && !has('nvim-0.4.3')
   let g:terminal_color_0 = s:bg0[0]
   let g:terminal_color_8 = s:gray[0]
 
